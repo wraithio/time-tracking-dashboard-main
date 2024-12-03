@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(/assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik-Italic';
+    src: url(/assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    background-color: #0E1323;
+    color: white;
+}
+
+.pageFormat{
+    margin-top: 10rem;
+}
+
+h1{
+    font-weight: 100;
+    margin: 0px;
+    width: fit-content !important;
+    font-size: 64px;
+}
+
+h2{
+    font-weight: 100;
+    margin: 0px;
+    width: fit-content !important;
+    font-size: 48px;
+}
+
+h3{
+    padding-top: 1rem;
+}
+
+p{
+    color: #7078C9;
+    margin: 0px;
+    width: fit-content !important;
+}
+
+.nameBlock{
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+.pfp{
+    width: 78px;
+    margin-bottom: 2rem;
+}
+
+.timeTabs{
+    border-end-end-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    padding: 1rem 2rem 0rem 2rem;
+}
+
+.timeTabs p:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.timeTabs p{
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.iconBlock{
+    display: flex;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.iconFormat{
+    padding-right: 1rem;
+    height: 79px;
+    
+}
+
+.blockGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.ellipsisIcon{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ellipsisIcon img{
+    height: 5px;
+}
+
+.inputSpace{
+    padding: 0px !important;
+}
+
+.workBlock{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #1C204B;
+    border-radius: 1rem;
+}
+
+.playBlock{
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: #1C204B;
+    border-radius: 1rem;
+}
+
+.studyBlock{
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: #1C204B;
+    border-radius: 1rem;
+}
+
+.exerciseBlock{
+    grid-column: 1/2;
+    grid-row: 2;
+    background-color: #1C204B;
+    border-radius: 1rem;
+}
+
+.socialBlock{
+    grid-column: 2/3;
+    grid-row: 2;
+    background-color: #1C204B;
+    border-radius: 1rem;
+}
+
+.selfcareBlock{
+    grid-column: 3/4;
+    grid-row: 2;
+    background-color: #1C204B;
+    border-radius: 1rem;
+}
