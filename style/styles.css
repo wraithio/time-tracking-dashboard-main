@@ -393,7 +393,7 @@ p {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(7, auto);
-    gap: 2rem;
+    gap: 1.5rem;
     margin-left: 0rem;
   }
 
@@ -506,7 +506,24 @@ p {
 
 @media screen and (max-width:376px) {
   .previousRow p{
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  h3{
+    padding-bottom: .5rem !important;
+    padding-top: 1.5rem !important;
+  }
+
+  .iconFormat{
+    width: 90px;
+  }
+
+  #mobilePage{
+    padding: .5rem;
+  }
+
+  .ellipsisIcon{
+    padding-top: 1.5rem;
   }
 
 }
