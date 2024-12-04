@@ -13,10 +13,9 @@ previousHrsW = [];
 currentHrsM = [];
 previousHrsM = [];
 
-function getAllData() {
-  fetch("../data.json")
-    .then((response) => response.json())
-    .then((data) => {
+async function getAllData() {
+  const promise = await fetch('../data.json');
+  const data = await promise.json();
       console.log(data);
       for (let i = 0; i < data.length; i++) {
         currentHrsD.push(data[i].timeframes.daily.current);
@@ -40,7 +39,7 @@ function getAllData() {
   previousSocialhrs.innerText = previousHrsD[4];
   currentCarehrs.innerText = currentHrsD[5];
   previousCarehrs.innerText = previousHrsD[5];
-    });
+    
 }
 
 getAllData();
