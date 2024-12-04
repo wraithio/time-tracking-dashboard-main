@@ -194,6 +194,16 @@ p {
   border-radius: 1rem;
 }
 
+@media screen and (max-width: 1400px) {
+    h1{
+        font-size: 56px;
+    }
+
+    .nameBlock{
+        padding-bottom: 3rem;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 .pageFormat{
     margin-top: 4rem;
@@ -447,10 +457,15 @@ p {
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:475px) {
     p{
         padding-bottom: 0px !important;
         font-size: 14px;
+    }
+
+    .previousRow{
+     padding: 0px;
+     padding-right: 2rem;
     }
 
     h1{
@@ -487,4 +502,11 @@ p {
     .iconBlock{
         height: 50px;
     }
+}
+
+@media screen and (max-width:376px) {
+  .previousRow p{
+    font-size: 12px;
+  }
+
 }
