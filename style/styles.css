@@ -71,6 +71,11 @@ p {
   margin-bottom: 2rem;
 }
 
+.pfp:hover{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
 .timeTabs {
   position: relative;
   z-index: 1;
@@ -412,6 +417,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .timeTabs p{
@@ -496,7 +502,7 @@ p {
     }
 
     .timeTabs p{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .iconBlock{
