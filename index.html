@@ -35,12 +35,10 @@
   <body>
     <div class="container pageFormat">
       <div class="row">
-        <div class="col-3">
-          <div>
-            <div
-              class="nameBlock"
-              style="background-color: #5747ea; border-radius: 0.75rem"
-            >
+        <div class="col-xl-3 col-4 d-none d-sm-block">
+          <!-- profile card -->
+          <div class="profileCard">
+            <div class="nameBlock" style="background-color: #5747ea">
               <img
                 class="pfp"
                 src="./images/image-jeremy.png"
@@ -51,21 +49,40 @@
               <h2>Jeremy Robson</h2>
             </div>
             <div class="timeTabs" style="background-color: #1c204b">
-              <a class="active"><p id="dailyBtn" >Daily</p></a>
+              <p id="dailyBtn">Daily</p>
               <p id="weeklyBtn">Weekly</p>
               <p id="monthlyBtn">Monthly</p>
             </div>
           </div>
         </div>
-        <div class="col-9">
+        <!-- work card -->
+        <div class="col-xl-9 col-sm-8 col">
           <div class="blockGrid">
+            <!-- profile card mobile -->
+            <div class="profileMobile d-block d-sm-none">
+              <div class="nameBlock" style="background-color: #5747ea">
+                <img
+                  class="pfp"
+                  src="./images/image-jeremy.png"
+                  alt="jeremy profile picture"
+                  style="border: 3px solid white; border-radius: 8rem"
+                />
+                <div>
+                  <p>Report for</p>
+                  <h2>Jeremy Robson</h2>
+                </div>
+              </div>
+              <div class="timeTabs" style="background-color: #1c204b">
+                <p id="dailyBtnMob">Daily</p>
+                <p id="weeklyBtnMob">Weekly</p>
+                <p id="monthlyBtnMob">Monthly</p>
+              </div>
+            </div>
+
             <div class="workBlock">
               <div
                 class="iconBlock"
-                style="
-                  background-color: hsl(15, 100%, 70%);
-                  justify-content: end;
-                "
+                style="background-color: hsl(15, 100%, 70%)"
               >
                 <img
                   class="iconFormat"
@@ -73,26 +90,29 @@
                   alt="work icon"
                 />
               </div>
-              <div class="container">
+              <div id="card">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-10 col-9">
                     <h3>Work</h3>
                   </div>
-                  <div class="col-6 ellipsisIcon">
+                  <div class="col-xl-2 col-3 ellipsisIcon">
                     <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
                   </div>
                 </div>
-                <div class="row">
-                  <h1 id="currentWorkhrs"></h1>
-                  <h1>hrs</h1>
-                </div>
-                <div class="row">
-                  <p>Last Week -</p>
-                  <p class="inputSpace" id="previousWorkhrs"></p>
-                  <p>hrs</p>
+                <div class="mobileFormat">
+                  <div class="row">
+                    <h1 id="currentWorkhrs"></h1>
+                    <h1>hrs</h1>
+                  </div>
+                  <div class="row previousRow">
+                    <p>Last Week -</p>
+                    <p class="inputSpace" id="previousWorkhrs"></p>
+                    <p>hrs</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- play card -->
             <div class="playBlock">
               <div
                 class="iconBlock"
@@ -107,26 +127,29 @@
                   alt="play icon"
                 />
               </div>
-              <div class="container">
+              <div id="card">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-10 col-9">
                     <h3>Play</h3>
                   </div>
-                  <div class="col-6 ellipsisIcon">
+                  <div class="col-xl-2 col-3 ellipsisIcon">
                     <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
                   </div>
                 </div>
-                <div class="row">
-                  <h1 id="currentPlayhrs"></h1>
-                  <h1>hrs</h1>
-                </div>
-                <div class="row">
-                  <p>Last Week -</p>
-                  <p class="inputSpace" id="previousPlayhrs"></p>
-                  <p>hrs</p>
+                <div class="mobileFormat">
+                  <div class="row">
+                    <h1 id="currentPlayhrs"></h1>
+                    <h1>hrs</h1>
+                  </div>
+                  <div class="row previousRow">
+                    <p>Last Week -</p>
+                    <p class="inputSpace" id="previousPlayhrs"></p>
+                    <p>hrs</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- study block -->
             <div class="studyBlock">
               <div
                 class="iconBlock"
@@ -141,26 +164,29 @@
                   alt="study icon"
                 />
               </div>
-              <div class="container">
+              <div id="card">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-10 col-9">
                     <h3>Study</h3>
                   </div>
-                  <div class="col-6 ellipsisIcon">
+                  <div class="col-xl-2 col-3 ellipsisIcon">
                     <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
                   </div>
                 </div>
-                <div class="row">
-                  <h1 id="currentStudyhrs"></h1>
-                  <h1>hrs</h1>
-                </div>
-                <div class="row">
-                  <p>Last Week -</p>
-                  <p class="inputSpace" id="previousStudyhrs"></p>
-                  <p>hrs</p>
+                <div class="mobileFormat">
+                  <div class="row">
+                    <h1 id="currentStudyhrs"></h1>
+                    <h1>hrs</h1>
+                  </div>
+                  <div class="row previousRow">
+                    <p>Last Week -</p>
+                    <p class="inputSpace" id="previousStudyhrs"></p>
+                    <p>hrs</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- exercise block -->
             <div class="exerciseBlock">
               <div
                 class="iconBlock"
@@ -175,175 +201,106 @@
                   alt="exercise icon"
                 />
               </div>
-              <div class="container">
+              <div id="card">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-10 col-9">
                     <h3>Exercise</h3>
                   </div>
-                  <div class="col-6 ellipsisIcon">
+                  <div class="col-xl-2 col-3 ellipsisIcon">
                     <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
                   </div>
                 </div>
-                <div class="row">
-                  <h1 id="currentExerhrs"></h1>
-                  <h1>hrs</h1>
-                </div>
-                <div class="row">
-                  <p>Last Week -</p>
-                  <p class="inputSpace" id="previousExerhrs"></p>
-                  <p>hrs</p>
+                <div class="mobileFormat">
+                  <div class="row">
+                    <h1 id="currentExerhrs"></h1>
+                    <h1>hrs</h1>
+                  </div>
+                  <div class="row previousRow">
+                    <p>Last Week -</p>
+                    <p class="inputSpace" id="previousExerhrs"></p>
+                    <p>hrs</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- social block -->
             <div class="socialBlock">
               <div
-              class="iconBlock"
-              style="
-                background-color:hsl(264, 64%, 52%);
-                justify-content: end;
-              "
-            >
-              <img
-                class="iconFormat"
-                src="./images/icon-social.svg"
-                alt="social icon"
-              />
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  <h3>Social</h3>
+                class="iconBlock"
+                style="
+                  background-color: hsl(264, 64%, 52%);
+                  justify-content: end;
+                "
+              >
+                <img
+                  class="iconFormat"
+                  src="./images/icon-social.svg"
+                  alt="social icon"
+                />
+              </div>
+              <div id="card">
+                <div class="row">
+                  <div class="col-xl-10 col-9">
+                    <h3>Social</h3>
+                  </div>
+                  <div class="col-xl-2 col-3 ellipsisIcon">
+                    <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+                  </div>
                 </div>
-                <div class="col-6 ellipsisIcon">
-                  <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+                <div class="mobileFormat">
+                  <div class="row">
+                    <h1 id="currentSocialhrs"></h1>
+                    <h1>hrs</h1>
+                  </div>
+                  <div class="row previousRow">
+                    <p>Last Week -</p>
+                    <p class="inputSpace" id="previousSocialhrs"></p>
+                    <p>hrs</p>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <h1 id="currentSocialhrs"></h1>
-                <h1>hrs</h1>
-              </div>
-              <div class="row">
-                <p>Last Week -</p>
-                <p class="inputSpace" id="previousSocialhrs"></p>
-                <p>hrs</p>
-              </div>
             </div>
-            </div>
+            <!-- self care -->
             <div class="selfcareBlock">
               <div
-              class="iconBlock"
-              style="
-                background-color:hsl(43, 84%, 65%);
-                justify-content: end;
-              "
-            >
-              <img
-                class="iconFormat"
-                src="./images/icon-self-care.svg"
-                alt="self-care icon"
-              />
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  <h3>Social</h3>
+                class="iconBlock"
+                style="
+                  background-color: hsl(43, 84%, 65%);
+                  justify-content: end;
+                "
+              >
+                <img
+                  class="iconFormat"
+                  src="./images/icon-self-care.svg"
+                  alt="self-care icon"
+                />
+              </div>
+              <div id="card">
+                <div class="row">
+                  <div class="col-xl-10 col-9">
+                    <h3 id="selfcaretext">Self Care</h3>
+                  </div>
+                  <div class="col-xl-2 col-3 ellipsisIcon">
+                    <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+                  </div>
                 </div>
-                <div class="col-6 ellipsisIcon">
-                  <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+                <div class="mobileFormat">
+                  <div class="row">
+                    <h1 id="currentCarehrs"></h1>
+                    <h1>hrs</h1>
+                  </div>
+                  <div class="row previousRow">
+                    <p>Last Week -</p>
+                    <p class="inputSpace" id="previousCarehrs"></p>
+                    <p>hrs</p>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <h1 id="currentCarehrs"></h1>
-                <h1>hrs</h1>
-              </div>
-              <div class="row">
-                <p>Last Week -</p>
-                <p class="inputSpace" id="previousCarehrs"></p>
-                <p>hrs</p>
-              </div>
-            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
-
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
 
     <script src="./scripts/app.js"></script>
     <script
@@ -351,7 +308,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <div class="attribution">
+    <div class="attribution mt-5">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
