@@ -4,8 +4,9 @@ Date : 12/4/2024
 Objective : In this Challenge you are to recreate the prototype from the Figma provided. [here](https://www.figma.com/design/pMY3xdGqx5PWu8mc992IY8/time-tracking-dashboard?node-id=0-1&t=6B8txT2L61oSZInP-1)
 ---
 ## Peer Review
-- **Reviewed by:**  
-- **Comments:**
+- **Reviewed by: Juan Heredia**  
+- **Comments: Responsiveness is pretty good, I like how there's a lot of different displays depending on screen size, everything looks like in the figma. 
+My feed back is: at around 575 width and below, the time buttons stop working for some reason, the "Report for" is too dark in desktop and tablet, when you hover over the ellipses, it's supposed to stop hovering over the cards, (look into the ":has()" pseudo class)**
 
 
 # Frontend Mentor - Time tracking dashboard
