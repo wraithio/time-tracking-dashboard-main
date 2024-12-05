@@ -6,11 +6,26 @@ let weeklyBtnMob = document.getElementById("weeklyBtnMob");
 let monthlyBtnMob = document.getElementById("monthlyBtnMob");
 let exportData = [];
 
-async function getAllData(empty) {
+async function getAllData() {
   const promise = await fetch("../data.json");
   const data = await promise.json();
   exportData = data
   console.log(exportData)
+  dailyBtn.className = "text-white";
+  weeklyBtn.className = "";
+  monthlyBtn.className = "";
+  currentWorkhrs.innerText = exportData[0].timeframes.daily.current;
+  previousWorkhrs.innerText = exportData[0].timeframes.daily.previous;
+  currentPlayhrs.innerText = exportData[1].timeframes.daily.current;
+  previousPlayhrs.innerText = exportData[1].timeframes.daily.previous;
+  currentStudyhrs.innerText = exportData[2].timeframes.daily.current;
+  previousStudyhrs.innerText = exportData[2].timeframes.daily.previous;
+  currentExerhrs.innerText = exportData[3].timeframes.daily.current;
+  previousExerhrs.innerText = exportData[3].timeframes.daily.previous;
+  currentSocialhrs.innerText = exportData[4].timeframes.daily.current;
+  previousSocialhrs.innerText = exportData[4].timeframes.daily.previous;
+  currentCarehrs.innerText = exportData[5].timeframes.daily.current;
+  previousCarehrs.innerText = exportData[5].timeframes.daily.previous;
 }
 
 getAllData();
