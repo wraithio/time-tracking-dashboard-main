@@ -1,5 +1,3 @@
-let currentWorkhrs = document.getElementById("currentWorkhrs");
-let previousWorkhrs = document.getElementById("previousWorkhrs");
 let dailyBtn = document.getElementById("dailyBtn");
 let weeklyBtn = document.getElementById("weeklyBtn");
 let monthlyBtn = document.getElementById("monthlyBtn");
