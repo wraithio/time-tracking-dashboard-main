@@ -39,7 +39,7 @@ h3 {
 }
 
 p {
-  color: #7078c9;
+  color: #a2a5c0;
   margin: 0px;
   width: fit-content !important;
 }
@@ -155,8 +155,13 @@ p {
   filter: brightness(200%);
 }
 
+#card:has(.ellipsisIcon:hover)
+{
+  background-color: #1c204b;
+}
+
 .ellipsisIcon img {
-  height: 5px;
+  height: 7px;
 }
 
 .inputSpace {

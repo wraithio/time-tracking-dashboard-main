@@ -14,6 +14,9 @@ async function getAllData() {
   dailyBtn.className = "text-white";
   weeklyBtn.className = "";
   monthlyBtn.className = "";
+  dailyBtnMob.className = "text-white";
+  weeklyBtnMob.className = "";
+  monthlyBtnMob.className = "";
   currentWorkhrs.innerText = exportData[0].timeframes.daily.current;
   previousWorkhrs.innerText = exportData[0].timeframes.daily.previous;
   currentPlayhrs.innerText = exportData[1].timeframes.daily.current;
@@ -31,9 +34,7 @@ async function getAllData() {
 getAllData();
 
 function dailyClick() {
-  dailyBtn.className = "text-white";
-  weeklyBtn.className = "";
-  monthlyBtn.className = "";
+ 
   currentWorkhrs.innerText = exportData[0].timeframes.daily.current;
   previousWorkhrs.innerText = exportData[0].timeframes.daily.previous;
   currentPlayhrs.innerText = exportData[1].timeframes.daily.current;
@@ -49,9 +50,7 @@ function dailyClick() {
 }
 
 function monthlyClick(){
-  dailyBtn.className = "";
-  weeklyBtn.className = "";
-  monthlyBtn.className = "text-white";
+  
   currentWorkhrs.innerText = exportData[0].timeframes.monthly.current;
   previousWorkhrs.innerText = exportData[0].timeframes.monthly.previous;
   currentPlayhrs.innerText = exportData[1].timeframes.monthly.current;
@@ -67,9 +66,7 @@ function monthlyClick(){
 }
 
 function weeklyClick(){
-  dailyBtn.className = "";
-  weeklyBtn.className = "text-white";
-  monthlyBtn.className = "";
+ 
   currentWorkhrs.innerText = exportData[0].timeframes.weekly.current;
   previousWorkhrs.innerText = exportData[0].timeframes.weekly.previous;
   currentPlayhrs.innerText = exportData[1].timeframes.weekly.current;
@@ -85,13 +82,42 @@ function weeklyClick(){
 }
 
 dailyBtn.addEventListener('click', function(){
+ dailyBtn.className = "text-white";
+  weeklyBtn.className = "";
+  monthlyBtn.className = "";
     dailyClick();
 })
 
 monthlyBtn.addEventListener('click', function(){
+dailyBtn.className = "";
+  weeklyBtn.className = "";
+  monthlyBtn.className = "text-white";
     monthlyClick();
 })
 
 weeklyBtn.addEventListener('click', function(){
+ dailyBtn.className = "";
+  weeklyBtn.className = "text-white";
+  monthlyBtn.className = "";
+    weeklyClick();
+})
+dailyBtnMob.addEventListener('click', function(){
+  dailyBtnMob.className = "text-white";
+  weeklyBtnMob.className = "";
+  monthlyBtnMob.className = "";
+    dailyClick();
+})
+
+monthlyBtnMob.addEventListener('click', function(){
+  dailyBtnMob.className = "";
+  weeklyBtnMob.className = "";
+  monthlyBtnMob.className = "text-white";
+    monthlyClick();
+})
+
+weeklyBtnMob.addEventListener('click', function(){
+  dailyBtnMob.className = "";
+  weeklyBtnMob.className = "text-white";
+  monthlyBtnMob.className = "";
     weeklyClick();
 })
